@@ -1,0 +1,85 @@
+:root {
+  --ff-maven: 'Maven Pro', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+#nav {
+  width: 100%;
+  height: 135.6px;
+  padding: 32px 0;
+}
+
+.nav-container {
+  width: 1140px;
+  padding: 0 20px;
+  margin: 0 189.6px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar-brand {
+  width: 230px;
+  height: 71.6px;
+  padding: 8px 0;
+}
+
+.navbar-lang {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: var(--ff-maven);
+  font-weight: 700;
+  font-size: 18px;
+  color: #222d32;
+}
+
+.navbar-lang > .de {
+  color: #a6685a;
+}
+
+.navbar-lang > .en {
+  color: #222d32;
+}
+
+.navbar-lang > a {
+  text-decoration: none;
+}
+
+
+
+.nav-menu {
+  width: 745.638px;
+  height: 67.5px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  width: 666.838px;
+  font-family: var(--ff-maven);
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  padding: 4px 8px;
+}
+
+li > a {
+  text-decoration: none;
+  color: #222d32;
+}
