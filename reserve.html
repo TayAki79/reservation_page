@@ -4,45 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservation Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="reserve.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <script src="reserve.js" defer></script>
   </head>
   <body>
-    <div class="navbar" id="nav">
-      <div class="nav-container">
+    <nav class="navbar" id="nav">
+      <div class="d-flex container nav-container">
         <a class="navbar-brand" href="https://www.restaurant-kredo.de">
           <div class="logocontainer">
-            <img src="./images/logo.svg" alt="" />
+            <img src="./images/logo.svg" alt="" class="navbar-brand-img"/>
           </div>
         </a>
-        <div class="navbar-lang">
-          <a class="de" href="#">DE</a>
+        <div id="navbar-lang">
+          <a class="nav-lang" href="#">DE</a>
           <span class="spacer">|</span>
-          <a class="en" href="#">EN</a>
+          <a class="nav-lang" href="#">EN</a>
         </div>
         <div class="nav-menu">
-          <ul class="navbar-nav">
-            <li class="nav-li">
-              <a href="">Menü</a>
+          <ul class="d-flex flex-row align-items-center navbar-nav">
+            <li class="nav-li nav-primary">
+              <a href="" class="nav-item nav-primary nav-link">Menü</a>
+              <ul class="nav-branch nav-dropdown">
+                <li class="nav-link">
+                  <a href="" class="nav-item nav-link">Speisekarte</a>
+                </li>
+                <li class="nav-link">
+                  <a href="" class="nav-item nav-link">Getränkekarte</a>
+                </li>
+                <li class="nav-link">
+                  <a href="" class="nav-item nav-link">Weinkarte</a>
+                </li>
+              </ul>
             </li>
             <span class="spacer">|</span>
-            <li class="nav-li">
-              <a href="">Unser Kredo</a>
+            <li class="nav-li nav-primary">
+              <a href="" class="nav-item nav-primary nav-link">Unser Kredo</a>
             </li>
             <span class="spacer">|</span>
-            <li class="nav-li">
-              <a href="">Aktuelles</a>
+            <li class="nav-li nav-primary">
+              <a href="" class="nav-item nav-primary nav-link">Aktuelles</a>
             </li>
             <span class="spacer">|</span>
-            <li class="nav-li">
-              <a href="">Reservierungen</a>
+            <li class="nav-li nav-primary">
+              <a href="" class="nav-item nav-primary nav-link"
+                >Reservierungen</a
+              >
             </li>
             <span class="spacer">|</span>
-            <li class="nav-li">
-              <a href="">Seegarten</a>
+            <li class="nav-li nav-primary">
+              <a href="" class="nav-item nav-primary nav-link">Seegarten</a>
             </li>
           </ul>
           <a class="navbar-icon" href="tel:+4955177075066">
@@ -50,7 +77,6 @@
               width="30px"
               height="30px"
               viewBox="0 0 30 30"
-
               style="color: #222d32"
               fill="currentColor"
             >
@@ -64,6 +90,70 @@
           </a>
         </div>
       </div>
-    </div>
+    </nav>
+    <main id="main">
+      <section class="main-text-section">
+        <div class="container">
+          <div class="main-text-content">
+            <div class="kredo-signet l"></div>
+            <div class="titles mCnt">
+              <h1>Reservierung</h1>
+              <h2>Bis bald im Kredo!</h2>
+            </div>
+            <div class="mCnt">
+              <div class="mCnt mImgFloatLeft mRow clearfix">
+                <div class="frame-reservierung">
+                  <iframe id="reservationWidget" src="https://reservation.dish.co/widget/hydra-dbfd88fa-1e32-43a3-b131-e015aa7cb4c7?&eid=hydra-dbfd88fa-1e32-43a3-b131-e015aa7cb4c7&tagid=hors-hydra-dbfd88fa-1e32-43a3-b131-e015aa7cb4c7&width=100%25&height=&foregroundColor=&backgroundColor=&linkColor=&errorColor=&primaryButtonForegroundColor=&primaryButtonBackgroundColor=%23A6685A&secondaryButtonForegroundColor=%23ffffff&secondaryButtonBackgroundColor=%23A6685A" width="100%" height="450" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer-top" class="footer">
+        <div class="container">
+          <div class="d-flex justify-content-between footer-row">
+            <div class="footer-logo">
+              <img src="./images/logo.svg" width="185" alt="">
+            </div>
+            <ul class="footer-note">
+              <li itemprop="name">Restaurant Kredo</li>
+              <li itemprop="address">
+                <address>Sandweg 9a</address>
+                <address>
+                  <span itemprop="postalCode">37083</span>
+                  <span itemprop="addressLocality">Göttingen</span>
+                </address>
+                <address itemprop="telephone">0551 77075066</address>
+              </li>
+            </ul>
+            <ul class="footer-note">
+              <li>Öffnungszeiten</li>
+              <li>MO Ruhetag</li>
+              <li>DI-MI 12-16:30  |   18-22 Uhr</li>
+              <li>DO-SA 10-16:30  |   18-22 Uhr</li>
+              <li>SO 10-16:30 Uhr</li>
+            </ul>
+            <div class="footer-icons">
+              <img src="https://www.restaurant-kredo.de/images/icons/instagram.svg" width="35" height="35" alt="">
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer id="footer" class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <ul class="d-flex justify-content-center footer-menu">
+                <li><a href="">Kontakt</a></li>
+                <li><a href="">Datenschutz</a></li>
+                <li><a href="">Impressum</a></li>
+                <li><a href="">Schutz</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
